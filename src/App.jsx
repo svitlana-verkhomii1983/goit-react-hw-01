@@ -1,4 +1,5 @@
 import "./App.css";
+import React from 'react';
 import Profile from "./components/Profile/Profile";
 import userData from "./JSON/userData.json";
 import "modern-normalize";
