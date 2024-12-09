@@ -1,7 +1,11 @@
 import "./App.css";
-import React from 'react';
 import Profile from "./components/Profile/Profile";
+import FriendList from './components/FriendList/FriendList';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+
 import userData from "./JSON/userData.json";
+import friendsData from './JSON/friends.json';
+import transactionsData from './JSON/transactions.json';
 import "modern-normalize";
 import FriendsList from "./components/FriendList/FriendList";
 
@@ -15,7 +19,8 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
-      <FriendsList />
+       <FriendList friends={friendsData} />
+      <TransactionHistory items={transactionsData} />
     </>
   );
 };
