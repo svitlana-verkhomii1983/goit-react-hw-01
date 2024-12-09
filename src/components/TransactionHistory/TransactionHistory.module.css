@@ -1,16 +1,25 @@
-.transactionHistory {
+.transaction-history {
   width: 100%;
+  border: 1px solid #000;
   border-collapse: collapse;
-  margin-top: 20px;
 }
 
-.transactionHistory th,
-.transactionHistory td {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-.transactionHistory th {
-  background-color: #f2f2f2;
+.transaction-history th,
+.transaction-history td {
+  padding: 10px;
   text-align: left;
+  border: 1px solid #ddd;
+}
+
+.transaction-history th {
+  background-color: black;
+  color: white;
+}
+
+.odd {
+  background-color: #f9f9f9;
+}
+
+.even {
+  background-color: #f3f3f3;
 }

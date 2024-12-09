@@ -1,0 +1,7 @@
+.friendList {
+  display: flex;
+  flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку, если не помещаются */
+  justify-content: space-between; /* Элементы равномерно распределены по ширине */
+  gap: 20px; /* Пробел между карточками */
+  padding: 20px;
+}
