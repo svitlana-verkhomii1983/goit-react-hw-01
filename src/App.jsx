@@ -1,10 +1,12 @@
 import React from 'react';
-import "./App.css";
-import "modern-normalize";
 import Profile from './components/Profile/Profile';
+import FriendsList from './components/FriendsList/FriendsList';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+
 import userData from './JSON/userData.json';
-import FriendList from './components/FriendList/FriendList';
-import friends from './JSON/friends.json';
+import friendsData from './JSON/friends.json';
+import transactionsData from './JSON/transactions.json';
+
 
 const App = () => {
   return (
@@ -16,8 +18,8 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
-      <FriendList friends={friends} />
-      <TransactionHistory items={transactions} />
+      <FriendsList friends={friendsData} />
+      <TransactionHistory items={transactionsData} />
     </>
   );
 };

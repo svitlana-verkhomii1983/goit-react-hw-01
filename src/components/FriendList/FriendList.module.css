@@ -1,7 +1,33 @@
-.friendList {
+.item {
   display: flex;
-  flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку, если не помещаются */
-  justify-content: space-between; /* Элементы равномерно распределены по ширине */
-  gap: 20px; /* Пробел между карточками */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
   padding: 20px;
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.name {
+  font-size: 18px;
+}
+
+.online {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.offline {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  margin-right: 10px;
 }
